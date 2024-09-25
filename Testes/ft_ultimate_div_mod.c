@@ -1,41 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: brsoares <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/12 09:15:12 by brsoares          #+#    #+#             */
-/*   Updated: 2024/09/14 08:25:52 by brsoares         ###   ########.fr       */
+/*   Created: 2024/09/11 08:14:06 by brsoares          #+#    #+#             */
+/*   Updated: 2024/09/13 09:04:08 by brsoares         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dest, char *src)
+void	ft_ultimate_div_mod(int *a, int *b)
 {
-	int	i;
+	int	div;
+	int	mod;
 
-	i = 0;
-	while (src[i] != '\0')
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (dest);
+	div = *a;
+	mod = *b;
+	*a = div / mod;
+	*b = div % mod;
 }
 /*
 #include <stdio.h>
 
 int	main(void)
 {
-	char	str1[] = "Bruna";
-	char	str2[] = "Cassola";
+	int	a = 10;
+	int	b = 3;
+	
 
-	printf("Before str1 = %s e str2 = %s\n", str1, str2);
-	
-	ft_strcpy(str1, str2);
-	
-	printf("After str1 = %s e str2 = %s", str1 ,str2);
+	ft_ultimate_div_mod(&a, &b);
+	printf ("a: %i, b: %i", a, b);
 	return (0);
 }
 */

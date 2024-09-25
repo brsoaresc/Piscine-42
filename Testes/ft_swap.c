@@ -1,41 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: brsoares <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/12 09:15:12 by brsoares          #+#    #+#             */
-/*   Updated: 2024/09/14 08:25:52 by brsoares         ###   ########.fr       */
+/*   Created: 2024/09/10 10:46:24 by brsoares          #+#    #+#             */
+/*   Updated: 2024/09/13 07:22:16 by brsoares         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dest, char *src)
+void	ft_swap(int *a, int *b)
 {
-	int	i;
+	int	troca;
 
-	i = 0;
-	while (src[i] != '\0')
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (dest);
+	troca = *a;
+	*a = *b;
+	*b = troca;
 }
 /*
 #include <stdio.h>
 
 int	main(void)
 {
-	char	str1[] = "Bruna";
-	char	str2[] = "Cassola";
-
-	printf("Before str1 = %s e str2 = %s\n", str1, str2);
+	int a = 5;
+	int b = 10;
 	
-	ft_strcpy(str1, str2);
-	
-	printf("After str1 = %s e str2 = %s", str1 ,str2);
+	printf("Antes a: %i, e b: %i\n", a, b);
+	ft_swap(&a, &b);
+	printf("Depois a: %i e b: %i", a, b);
 	return (0);
 }
 */
