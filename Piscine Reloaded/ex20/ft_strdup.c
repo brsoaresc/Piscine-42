@@ -14,8 +14,8 @@
 
 char	*ft_strdup(char *src)
 {
-	int	len;
-	int	i;
+	int		len;
+	int		i;
 	char	*dest;
 	
 	len = 0;
