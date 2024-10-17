@@ -1,4 +1,4 @@
-É a funcao que copis uma string de forma mais segura(limpa).
-ela garante que a copia nao ultrapasse o tamanho do destino e o resuktado seja sempre uma string terminada com \0,
+É a funcao que copia uma string de forma mais segura(limpa).
+Ela garante que a copia nao ultrapasse o tamanho do destino e o resultado seja sempre uma string terminada com \0,
 mesmo que a origem seja maior do que o destino.
-Estruta: strlcpy (dest, scr, sizeof(dest))
+Estrutura: strlcpy (dest, scr, sizeof(dest))
