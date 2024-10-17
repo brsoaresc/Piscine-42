@@ -10,21 +10,23 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+//a funcao imprime o nome do arquivo (argv[0])
+
 #include <unistd.h>
 
 int	main(int argc, char *argv[])
 {
-	int	a;
+	int	a; //integrador de argumentos
 
-	a = 0;
-	if (argc > 0)
+	a = 0; //comeca a contar da posicao 0
+	if (argc > 0) //verifica se o numero de argumentos e maior que 0
 	{
-		while (argv[0][a] != '\0')
+		while (argv[0][a] != '\0') //percorre ate o fim da string
 		{
-			write (1, &argv[0][a], 1);
-			a++;
+			write (1, &argv[0][a], 1); //imprime o nome, caracter por caracter
+			a++; //continua a percorrer a string, proxima posicao
 		}
-		write (1, "\n", 1);
+		write (1, "\n", 1); //adiciona quebra de linha
 	}
-	return (0);
+	return (0); //se o numero de argumetos for menor que 0, retorna 0
 }
