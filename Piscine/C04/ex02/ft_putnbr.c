@@ -14,15 +14,15 @@
 
 void	ft_putnbr(int nb)
 {
-	long	n;
+	long	n; //o long consegue lidar com numeros extensos, pois ocupa mais espaco na memoria
 
-	n = nb;
-	if (n < 0)
+	n = nb; //n agora tem o valor de nb, podendo lidar com numeros maiores
+	if (n < 0) //verifica se o numero e negativo
 	{
 		write(1, "-", 1);
 		n = -n;
 	}
-	if (n >= 10)
+	if (n >= 10) 
 	{
 		ft_putnbr (n / 10);
 	}
