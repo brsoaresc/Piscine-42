@@ -12,20 +12,20 @@
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int	a;
+	unsigned int	a; //integrador, abrange inteiros de maior tamanho
 
-	a = 0;
-	while ((src[a] != '\0') && (a < n))
+	a = 0; //comeca a contar da posicao 0
+	while ((src[a] != '\0') && (a < n)) //(a < n) garante que nao copiamos mais que n caracteres
 	{
-		dest[a] = src[a];
-		a++;
+		dest[a] = src[a]; //copia para o destino o quem tem na origem
+		a++; //continua a percorrer a string, proxima posicao
 	}
-	while (a < n)
+	while (a < n) //continua enquanto for maior que n
 	{
-		dest[a] = '\0';
-		a++;
+		dest[a] = '\0'; // se a string tiver menos que n caracteres, o loop preenche com nulo
+		a++; //continua a percorrer a string, proxima posicao
 	}
-	return (dest);
+	return (dest); //devolve o ponteiro da string de destino ao chamador, permitindo acesso a sting copiada
 }
 /*
 #include <stdio.h>
