@@ -32,7 +32,7 @@ int	main(int argc, char *argv[])
 				b++; //para para o proximo caracter do argumento atual
 			}
 			write (1, "\n", 1); //quebra de linha para separar os argumentos
-			a++; //move para o proximo arguemnto
+			a++; //move para o proximo arguemento
 		}
 	}
 	return (0); //se o numero de argumetos for menor que 0, retorna 0
