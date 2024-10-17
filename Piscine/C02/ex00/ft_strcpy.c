@@ -10,18 +10,18 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dest, char *src)
+char	*ft_strcpy(char *dest, char *src) //Declara que a funcao retorna um ponteiro
 {
-	int	i;
+	int	i; //integrador (contador de indice)
 
-	i = 0;
-	while (src[i] != '\0')
+	i = 0; //comeca em 0 para comecar da primeira letra/numero
+	while (src[i] != '\0') //enquanto src for diferente de nulo(fim da string)
 	{
-		dest[i] = src[i];
-		i++;
+		dest[i] = src[i]; //copia para o destino o quem tem na origem
+		i++; //continua a percorrer a string, proxima posicao
 	}
-	dest[i] = '\0';
-	return (dest);
+	dest[i] = '\0'; //adiciona o nulo no destino, dando fim a string
+	return (dest); //devolve o ponteiro da string de destino ao chamador, permitindo acesso a sting copiada
 }
 /*
 #include <stdio.h>
