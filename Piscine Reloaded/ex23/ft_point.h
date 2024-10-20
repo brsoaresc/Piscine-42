@@ -23,7 +23,8 @@ typedef struct t_point
 
 //explicacao do comando typedef struct t_point
 //typedef usado para criar um apelido para um tipo de dado. Nesse caso, estamos criando um apelido para a estrutura que definiremos
-//struct t_point define uma estrutura chamada t_point. Uma estrutura (struct) é um tipo de dado que pode armazenar múltiplos valores de diferentes tipos em um só objeto,
-//a estrutura armazena dois valores inteiros, x e y, representando as coordenadas de um ponto
+//struct t_point define uma estrutura chamada t_point. Uma estrutura (struct) é um tipo de dado que pode armazenar múltiplos valores 
+//de diferentes tipos em um só objeto, a estrutura armazena dois valores inteiros, x e y, representando as coordenadas de um ponto
 //int x; int y; são os campos da estrutura, x e y são inteiros que armazenarão as coordenadas do ponto
-//} t_point; o typedef permite que a estrutura seja referenciada diretamente como t_point, em vez de struct t_point. Isso facilita a declaração de variáveis usando essa estrutura
+//} t_point; o typedef permite que a estrutura seja referenciada diretamente como t_point, em vez de struct t_point. Isso facilita a 
+//declaração de variáveis usando essa estrutura
