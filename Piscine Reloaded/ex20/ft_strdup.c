@@ -26,9 +26,9 @@ char	*ft_strdup(char *src)
 	dest = (char *) malloc(sizeof(char) * (len + 1));
 //Essa linha aloca memória dinamicamente para a nova string dest. O tamanho alocado é len + 1 bytes, onde len é o comprimento da string original e o +1 é para o 
 //caractere nulo \0 que marca o final da nova string
-//(char *) indica que estamos convertendo o ponteiro retornado por malloc() para o tipo char *. sizeof(char) e o tamanho de um caractere em bytes.
-//malloc() aloca uma quantidade especificada de memória e retorna um ponteiro para ela.
-	if (dest == NULL) //verificação para garantir que a alocação de memória foi feita.
+//(char *) indica que estamos convertendo o ponteiro retornado por malloc() para o tipo char *. sizeof(char) e o tamanho de um caractere em bytes
+//malloc() aloca uma quantidade especificada de memória e retorna um ponteiro para ela
+	if (dest == NULL) //verificação para garantir que a alocação de memória foi feita
 	{
 		return(NULL); //se falhou retorna NULL
 	}
