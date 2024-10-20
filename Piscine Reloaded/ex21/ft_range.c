@@ -10,26 +10,31 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+//a funcao ranger cria um array de inteiros contendo todos os valores entre min e max
 
-int	*ft_range(int min, int max)
+#include <stdlib.h> //biblioteca para acesso ao malloc
+
+int	*ft_range(int min, int max) //retorna um ponteiro para um array de inteiros
 {
-	int	i;
-	int	*array;
+	int	i; //integrador para preencher o array
+	int	*array; //ponteiro para o início do bloco de memória alocado dinamicamente, onde será armazenado o intervalo de números
 
-	if (min >= max)
+	if (min >= max) //garante que o valor de min seja sempre menor que max
 		return (NULL);
 	array = (int *)malloc(sizeof(int) * (max - min));
-	if (array == NULL)
-		return (NULL);
-	i = 0;
-	while (min < max)
+//(int *) faz um cast para o tipo int *, já que malloc() retorna um ponteiro genérico (void *).
+//sizeof(int) retorna o tamanho em bytes de um inteiro.
+//max - min e o número total de elementos que o array deverá conter. Por exemplo, se min = 3 e max = 7, o intervalo seria [3, 4, 5, 6], contendo 4 elementos
+	if (array == NULL) //verificação para garantir que a alocação de memória foi feita.
+		return (NULL); //se falhou retorna NULL
+	i = 0; //inicia o índice do array
+	while (min < max) //percorre os números de min até max - 1. Em cada iteração, o valor atual de min é colocado na posição i do array, e tanto min quanto i são incrementados
 	{
-		array[i] = min;
+		array[i] = min; //atribui o valor de min à posição atual i do array
 		min++;
 		i++;
 	}
-	return (array);
+	return (array); //retorna o ponteiro para o array criado
 }
 /*
 #include <stdio.h>
