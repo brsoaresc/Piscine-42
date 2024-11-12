@@ -3,3 +3,4 @@ Percorre a string de oringem caracter por caracter, começando do primeiro até 
 
 Estrutura: strcpy (dest, src)
            char	*ft_strcpy(char *dest, char *src)
+
