@@ -3,3 +3,4 @@ Isso evita erros como o estouro de buffer (qundo capia mais que o espaço permit
 
 Estrutura: strncpy (dest, src, size_t)
            char	*ft_strncpy(char *dest, char *src, unsigned int n)
+
