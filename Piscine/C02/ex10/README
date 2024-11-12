@@ -4,3 +4,4 @@ mesmo que a origem seja maior do que o destino.
 
 Estrutura: strlcpy (dest, scr, sizeof(dest))
            unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
+
